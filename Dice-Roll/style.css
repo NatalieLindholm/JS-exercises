@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    background-color: rgb(205, 233, 255);
+}
+
+#diceSide {
+    width: 150px;
+    height: 150px;
+
+    margin: 50px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Sono, sans-serif;
+}
+
+button {
+    border: black solid 3px;
+    border-radius: 10px;
+
+    width: 150px;
+    height: 50px;
+
+    font-size: 20px;
+    font-family: Sono, sans-serif;
+    font-weight: bolder;
+
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(230, 228, 228);
+}
