@@ -41,6 +41,8 @@ button {
     font-weight: bolder;
 
     background-color: white;
+
+    cursor: pointer;
 }
 
 button:hover {
