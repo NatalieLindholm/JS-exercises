@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Josefin Sans, sans-serif;
+}
+
+body {
+    background-color: rgb(205, 233, 255);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+#number {
+    margin-top: 20px;
+
+    border-radius: 10px;
+    border: solid black 3px;
+    height: 40px;
+    width: 200px;
+    font-size: 1.8em;
+    padding-left: 10px;
+}
+
+.box {
+    border-radius: 10px;
+    border: solid black 3px;
+
+    background-color: white;
+    height: 80px;
+    width: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enter {
+    margin: 20px;
+    border-radius: 10px;
+    border: solid black 3px;
+    background-color: white;
+
+    height: 50px;
+    width: 140px;
+
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#enter:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+#value {
+    font-size: 2em;
+}
+
+.zero {
+    color: rgb(94, 196, 255);
+}
+
+.positive {
+    color: rgb(78, 255, 78);
+}
+
+.negative {
+    color: rgb(255, 78, 78);
+}
