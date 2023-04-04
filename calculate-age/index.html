@@ -10,14 +10,23 @@
 </head>
 
 <body>
-    <h1>Calculate Age</h1>
-    <h3>enter your birth date</h3>
-    <input type="number" placeholder="date" id="date">
-    <input type="number" placeholder="month" id="month">
-    <input type="number" placeholder="year" id="year">
-    <button id="calculate" onclick="">Calculate</button>
-    <p id="displayAge">You are ... years and ... days old</p>
 
+    <div class="title">
+        <h1>Calculate Age</h1>
+    </div>
+
+    <h3>Enter your birth date</h3>
+
+    <form action="script.js" id="calculateAge">
+        <input type="number" placeholder="Date" id="date">
+        <input type="number" placeholder="Month" id="month">
+        <input type="number" placeholder="Year" id="year">
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div id="box">
+        <p id="displayAge"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 

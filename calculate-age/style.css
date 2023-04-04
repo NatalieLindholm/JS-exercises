@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Roboto Condensed, sans-serif;
+}
+
+body {
+    background-color: rgb(205, 233, 255);
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color: white;
+    color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: black solid 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70px;
+    width: 210px;
+}
+
+h3 {
+    color: rgb(56, 56, 56);
+    margin: 15px;
+}
+
+#box {
+    background-color: white;
+    color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: black solid 3px;
+
+    height: 90px;
+    width: 300px;
+
+    text-align: center;
+
+    font-size: 1.7em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: white;
+    color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: black solid 3px;
+
+    padding-left: 5px;
+    font-size: 1.3em;
+
+    height: 40px;
+    width: 100px;
+}
+
+#month {
+    margin: 0 10px 0 10px;
+}
+
+#calculateAge {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 400px;
+}
+
+button {
+    background-color: white;
+    color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: black solid 3px;
+
+    height: 40px;
+    width: 120px;
+
+    margin: 15px;
+
+    font-size: 1.5em;
+}
+
+button:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+
+/* box-shadow: 7px 7px 10px rgb(92, 91, 91); */
