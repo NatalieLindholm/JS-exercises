@@ -22,20 +22,25 @@ function aiAnswers() {
 
 
     if (aAnswer == 1 && pAnswer == "rock") {
-        console.log("rock draw")
+        result.innerText = "Draw"
     } else if (aAnswer == 2 && pAnswer == "paper") {
-        console.log("paper draw")
+        result.innerText = "Draw"
     } else if (aAnswer == 3 && pAnswer == "scissor") {
-        console.log("scissor draw")
+        result.innerText = "Draw"
+    } else if (aAnswer == 1 && pAnswer == "paper") {
+        result.innerText = "Player win"
+    } else if (aAnswer == 3 && pAnswer == "paper") {
+        result.innerText = "Ai win"
+    } else if (aAnswer == 2 && pAnswer == "rock") {
+        result.innerText = "Ai win"
+    } else if (aAnswer == 3 && pAnswer == "rock") {
+        result.innerText = "Player win"
+    } else if (aAnswer == 2 && pAnswer == "scissor") {
+        result.innerText = "Player win"
+    } else if (aAnswer == 1 && pAnswer == "scissor") {
+        result.innerText = "Ai win"
     }
 }
-// Player	vs	Ai
-// pape		vs	rock = Player wins
-// pape		vs	scissor = Ai wins
-// Rock 	vs	paper = Ai wins
-// Rock 	vs	scissor = Player wins
-// Scissor 	vs	paper = Player wins
-// Scissor 	vs	rock = Ai wins
 
 rock.addEventListener('click', function () {
     pAnswer = "rock"
