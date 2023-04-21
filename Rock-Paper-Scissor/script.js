@@ -29,6 +29,13 @@ function aiAnswers() {
         console.log("scissor draw")
     }
 }
+// Player	vs	Ai
+// pape		vs	rock = Player wins
+// pape		vs	scissor = Ai wins
+// Rock 	vs	paper = Ai wins
+// Rock 	vs	scissor = Player wins
+// Scissor 	vs	paper = Player wins
+// Scissor 	vs	rock = Ai wins
 
 rock.addEventListener('click', function () {
     pAnswer = "rock"
