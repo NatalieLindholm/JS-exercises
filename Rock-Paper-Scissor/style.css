@@ -1,25 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto Mono, sans-serif;
 }
 
 body {
     background-color: rgb(205, 233, 255);
 
     height: 100vh;
-}
-
-.box {
-    width: 400px;
-    height: 100px;
-
-    background-color: white;
-
-    border-radius: 10px;
-    border: solid black 3px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: 400px;
+
+    background-color: white;
+    color: rgb(56, 56, 56);
+
+    border-radius: 10px;
+    border: solid rgb(56, 56, 56) 4px;
+
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+h3 {
+    margin: 20px;
+}
+
+button {
+    height: 50px;
+    width: 110px;
+
+    margin-top: 20px;
+
+    font-size: 1.4em;
+
+    background-color: white;
+    color: rgb(56, 56, 56);
+
+    border-radius: 10px;
+    border: solid rgb(56, 56, 56) 4px;
+}
+
+button:hover {
+    background-color: rgb(219, 219, 219);
 }
