@@ -1,21 +1,35 @@
-const displayAge = document.querySelector("#displayAge")
+const inputElement = document.querySelector('input');
+const divElement = document.querySelector('#displayAge');
 
-const date = document.querySelector("#date")
-const month = document.querySelector("#month")
-const year = document.querySelector("#year")
-
-document.querySelector("#calculateAge").addEventListener("submit", (e) => {
-    e.preventDefault()
-
-    const nameIdk = year.value + "-" + (parseInt(month.value) - 1) + "-" + date.value
-
-    let birthDate = new Date(nameIdk)
-    let todaysDate = new Date()
-
-    let msDiff = todaysDate.getTime() - birthDate.getTime()
-    let years = Math.floor(msDiff / 1000 / 60 / 60 / 24 / 365)
-    let days = Math.floor((msDiff / 1000 / 60 / 60 / 24 / 365 - years) * 365)
-
-
-    displayAge.innerText = ("You are " + years + " years and " + days + " days old")
+inputElement.addEventListener('change', () => {
+    const result = computeAge(inputElement.value);
+    divElement.innerHTML = `
+    You are ${result.years} years and ${result.days} days old
+  `;
 });
+
+/**
+ * @param {string} dateOfBirth 
+ * @returns {{years: number, days: number}}
+ */
+function computeAge(dateOfBirth) {
+    const todaysDate = new Date();
+    const birtdate = new Date(dateOfBirth);
+
+    if ((todaysDate.getMonth() > birtdate.getMonth()) || (todaysDate.getMonth() === birtdate.getMonth() && todaysDate.getDate() >= birtdate.getDate())) {
+        const thisYearBirtDate = new Date(`${todaysDate.getFullYear()}-${birtdate.getMonth() + 1}-${birtdate.getDate()}`);
+
+        return {
+            years: todaysDate.getFullYear() - birtdate.getFullYear(),
+            days: Math.floor((todaysDate.getTime() - thisYearBirtDate.getTime()) / (1000 * 60 * 60 * 24))
+        };
+    }
+    else {
+        const lastYearBirtDate = new Date(`${todaysDate.getFullYear() - 1}-${birtdate.getMonth() + 1}-${birtdate.getDate()}`);
+
+        return {
+            years: todaysDate.getFullYear() - birtdate.getFullYear() - 1,
+            days: Math.floor((todaysDate.getTime() - lastYearBirtDate.getTime()) / (1000 * 60 * 60 * 24))
+        }
+    }
+}
