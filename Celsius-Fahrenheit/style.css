@@ -1,82 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    font-family: Robot Mono, sans-serif;
+    color: rgb(56, 56, 56);
+
+    font-family: Oswald, sans-serif;
 }
 
 body {
-    /* background-color: rgb(205, 233, 255); */
+    background-color: rgb(205, 233, 255);
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
 }
 
-.flexing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    width: 500px;
-}
-
 #box {
-    width: 350px;
+    width: 400px;
     height: 70px;
 
-    /* background-color: white;
-    color: rgb(56, 56, 56);
+    background-color: white;
 
     border-radius: 10px;
-    border: solid rgb(56, 56, 56) 4px; */
+    border: solid rgb(56, 56, 56) 4px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h3 {
+    margin: 20px 20px 8px 20px;
 }
 
 #value {
-    width: 300px;
+    width: 170px;
     height: 50px;
+    background-color: white;
 
     padding-left: 10px;
-}
 
-#resultbox {
-    width: 220px;
-    height: 70px;
+    font-size: 1.5em;
 
-    border: solid black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-}
-
-.unit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    border: solid rgb(56, 56, 56) 4px;
 
 }
 
 button {
-    width: 110px;
+    width: 120px;
     height: 50px;
+    background-color: white;
+
+    font-size: 1.5em;
+
+    margin-left: 10px;
+
+    border-radius: 10px;
+    border: solid rgb(56, 56, 56) 4px;
 }
 
-button:hover {
-    background-color: rgb(226, 226, 226);
+.unit {}
+
+#result {
+    width: 300px;
+    height: 70px;
+
+    background-color: white;
+
+    border-radius: 10px;
+    border: solid rgb(56, 56, 56) 4px;
+
+    font-size: 1.7em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
