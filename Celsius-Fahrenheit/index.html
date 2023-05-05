@@ -10,20 +10,27 @@
 </head>
 
 <body>
-    <h1>Celsius & Fahrenheit</h1>
+    <div class="flexing">
+        <div id="box">
+            <h1>Celsius & Fahrenheit</h1>
+        </div>
 
-    <h3>Input value</h3>
+        <h3>Input value and from what unit to convert from</h3>
 
-    <input type="number" id="value">
+        <div>
+            <input type="number" id="value"><button id="convert" onclick="converter()">Convert</button>
+        </div>
 
-    <input type="radio" name="weather" value="celsius" id="celsius">Celsius
-    <input type="radio" name="weather" value="fahrenheit" id="fahrenheit"> Fahrenheit
+        <div class="flex">
+            <input type="radio" name="weather" value="celsius" id="celsius" class="unit">Celsius
+            <input type="radio" name="weather" value="fahrenheit" id="fahrenheit" class="unit"> Fahrenheit
+        </div>
 
-    <button id="convert">Convert</button>
+        <div id="resultbox">
+            <p id="result"></p>
+        </div>
 
-    <p>Result</p>
-
-
+    </div>
     <script src="script.js"></script>
 </body>
 
