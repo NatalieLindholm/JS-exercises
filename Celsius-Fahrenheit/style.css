@@ -48,6 +48,8 @@ h3 {
 
     font-size: 1.5em;
 
+    margin: 10px;
+
     border-radius: 10px;
     border: solid rgb(56, 56, 56) 4px;
 
@@ -66,7 +68,57 @@ button {
     border: solid rgb(56, 56, 56) 4px;
 }
 
-.unit {}
+button:hover {
+    background-color: rgb(226, 225, 225);
+}
+
+/* ========================================================== */
+
+/* Customize the label (the container) */
+.container {
+    margin-left: 5px;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 3px;
+
+    height: 29px;
+    width: 29px;
+    background-color: white;
+    border-radius: 50%;
+
+    border: solid rgb(56, 56, 56) 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: rgb(226, 225, 225);
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #6cbafa;
+}
+
+/* ==========================================================*/
 
 #result {
     width: 300px;
@@ -78,6 +130,8 @@ button {
     border: solid rgb(56, 56, 56) 4px;
 
     font-size: 1.7em;
+
+    margin: 20px;
 
     display: flex;
     justify-content: center;
